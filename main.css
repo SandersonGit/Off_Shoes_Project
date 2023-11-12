@@ -87,7 +87,7 @@ main {
 }
 
 .card {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .card:hover {
@@ -121,7 +121,7 @@ h1 {
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    margin-top: ;
+    
 }
 
 .card {
@@ -130,8 +130,7 @@ h1 {
     flex-direction: column;
     padding: 16px;
     width: 242px;
-    /* background-color: aqua; */
-    /* border: solid 5px black; */
+   
     border-radius: 10%;
    
     
@@ -199,6 +198,195 @@ footer {
   .logo img {
     height: 155px;
   }
+
+  @media screen and (max-width: 480px) {
+    body {
+        
+        max-width: 480px;
+        
+    }
+    header .container {
+        
+        flex-direction: column;
+        
+    }
+        
+    header .container img {
+        height: 200px;
+        margin-right: 40px;
+    }   
+    header .container a {
+        
+        padding: 0;
+       
+    }  
+    nav ul{
+        
+        flex-direction: column;
+        padding: 10px;
+        gap: 18px;
+        text-align: center;
+        
+    }
+    header .container a {
+        
+        border: none;
+        font-weight: bold;
+        
+    }
+    #home {
+        
+        flex-direction: column;
+        margin: 70px 0;
+        
+        
+    }
+    #home img {
+        height: 180px;
+        border-radius: 10%;
+        margin-right: none;
+        margin: 0 auto;
+    }
+    #home h1 {
+        
+        margin-bottom: 48px;
+        margin-top: 25px;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #home .conteudo {
+        font-size: 0.8em;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        
+        
+    }
+
+    .card {
+    
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        width: 242px;
+       
+        border-radius: 10%;
+       
+        
+    }
+
+    #calcados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        margin: 0 auto;
+        
+      }
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        padding: 28px;
+        gap: none;
+        /* border: 2px solid black; */
+    
+      }
+      .logo img {
+        height: 100px;
+        /* margin-right: 100px; */
+      }
+      .contact-info{
+        font-size: 1em;
+        font-weight: bold;
+      }
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        
+        max-width: 768px;
+        overflow-x: hidden;
+        
+    }
+    header .container {
+        
+        flex-direction: column;
+        
+    }
+    #home {
+        
+        flex-direction: column;
+        margin-bottom: 85px;
+        margin-top: 25px;
+        width: 90%;
+        /* margin-bottom: -25px; */
+        
+        
+    }
+
+    #home img {
+        height: 280px;
+        
+        
+        margin: 0 auto;
+    }
+    #home h1 {
+        
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #home .conteudo {
+        font-size: 1.0em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .card {
+    
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        width: 242px;
+       
+        border-radius: 10%;
+       
+        
+    }
+
+    h1 {
+        align-items: center;
+    }
+
+    #calcados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .contact-info{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+  } 
 
 
 
